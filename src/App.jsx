@@ -17,7 +17,7 @@ import {
 } from 'lucide-react';
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState('about');
+  const [, setActiveSection] = useState('about');
   const [scrolled, setScrolled] = useState(false);
 
   // 监听滚动以改变导航栏样式
@@ -73,7 +73,7 @@ const Portfolio = () => {
     {
       company: "中冶赛迪-技术研究院 (央企)",
       role: "AI 应用算法工程师",
-      period: "2025.06 - 2025.10",
+      period: "2025.06 - 2025.11",
       description: "主导 Multi-Agent 框架调研与落地，全栈自研知识图谱构建平台。",
       achievements: [
         "深度调研 LangGraph/Autogen，设计并实现多智能体框架评估平台。",
@@ -132,7 +132,8 @@ const Portfolio = () => {
   const awards = [
     "2024年研究生学业奖学金特等奖 (前5%)",
     "2024年蓝桥杯算法编程比赛研究生组重庆赛区第一名",
-    "2024年 CCF-CSP 计算机软件能力认证前 3.8%"
+    "2024年 CCF-CSP 计算机软件能力认证前 3.8%",
+    "2025年 挑战杯-揭榜挂帅专项赛二等奖"
   ];
 
   return (
@@ -383,7 +384,7 @@ const Portfolio = () => {
              <Award className="w-12 h-12 text-yellow-500 mx-auto mb-2" />
              <h2 className="text-2xl font-bold">荣誉奖项</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {awards.map((award, idx) => (
                <div key={idx} className="bg-gradient-to-br from-slate-900 to-slate-950 p-6 rounded-lg border border-slate-800 flex flex-col items-center justify-center shadow-lg">
                  <div className="text-yellow-500/80 mb-3">★</div>
